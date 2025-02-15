@@ -1,0 +1,294 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TribalWarriorElite",
+				"abbreviation": "Tribal Elite",
+				"full": "Tribal Warrior Elite",
+				"version": "1.0",
+				"authors": [
+					"Draconem"
+				]
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Tribal Warrior Elite",
+			"source": "TribalWarriorElite",
+			"page": 350,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item hide armor|phb}",
+						"{@item +2 shield (*)|xdmg}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 12",
+				"average": 39
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 15,
+			"con": 15,
+			"int": 8,
+			"wis": 11,
+			"cha": 8,
+			"passive": 10,
+			"languages": [
+				"any one language"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The warrior has advantage on an attack roll against a creature if at least one of the warrior's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Charge",
+					"entries": [
+						"If the monster moves at least 20 ft straight toward a target and then hits it with an attack on the same turn, the target takes extra 7 ({@damage 2d6}) slashing damage and must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}9 ({@damage 1d6 + 6}) piercing damage, or 10 ({@damage 1d8 + 6}) piercing damage if used with two hands to make a melee attack."
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"mountain",
+				"grassland",
+				"hill",
+				"arctic",
+				"forest",
+				"swamp",
+				"underdark",
+				"desert"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/tribal-warrior.mp3"
+			},
+			"attachedItems": [
+				"spear|phb"
+			],
+			"traitTags": [
+				"Charge",
+				"Pack Tactics"
+			],
+			"languageTags": [
+				"X"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"MLW",
+				"THW"
+			],
+			"hasFluff": true,
+			"fluff": {
+				"name": "Tribal Warrior",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Tribal warriors live beyond civilization, most often subsisting on fishing and hunting. Each tribe acts in accordance with the wishes of its chief, who is the greatest or oldest warrior of the tribe or a tribe member blessed by the gods."
+								]
+							}
+						]
+					}
+				]
+			},
+			"shortName": "Tribal Elite",
+			"conditionInflict": [
+				"prone"
+			],
+			"token": {
+				"name": "Tribal Warrior",
+				"source": "MM"
+			},
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Tribal Warrior Warchief",
+			"source": "TribalWarriorElite",
+			"page": 350,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item hide armor|phb}",
+						"{@item +2 shield (*)|xdmg}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d12 + 12",
+				"average": 51
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 15,
+			"con": 15,
+			"int": 8,
+			"wis": 11,
+			"cha": 10,
+			"passive": 12,
+			"languages": [
+				"any one language"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The warrior has advantage on an attack roll against a creature if at least one of the warrior's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Charge",
+					"entries": [
+						"If the monster moves at least 20 ft straight toward a target and then hits it with an attack on the same turn, the target takes extra 7 ({@damage 2d6}) piercing damage and must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The monster makes two spear attacks."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}9 ({@damage 1d6 + 6}) piercing damage, or 10 ({@damage 1d8 + 6}) piercing damage if used with two hands to make a melee attack."
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"mountain",
+				"grassland",
+				"hill",
+				"arctic",
+				"forest",
+				"swamp",
+				"underdark",
+				"desert"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/tribal-warrior.mp3"
+			},
+			"attachedItems": [
+				"spear|phb"
+			],
+			"traitTags": [
+				"Charge",
+				"Pack Tactics"
+			],
+			"languageTags": [
+				"X"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"MLW",
+				"THW"
+			],
+			"hasFluff": true,
+			"token": {
+				"name": "Tribal Warrior",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Tribal Warrior",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Tribal warriors live beyond civilization, most often subsisting on fishing and hunting. Each tribe acts in accordance with the wishes of its chief, who is the greatest or oldest warrior of the tribe or a tribe member blessed by the gods."
+								]
+							}
+						]
+					}
+				]
+			},
+			"shortName": "Tribal Warchief",
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The creature may use a reaction to add 2 to its AC against a melee attack that would hit it. To do so, the creature must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"damageTags": [
+				"P"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		}
+	]
+}
